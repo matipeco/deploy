@@ -19,11 +19,13 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+require('dotenv').config();
+const { PORT } = process.env;
 
 // Syncing all the models at once.
 //Force: true, me sirve para eliminar todas las tablas de la DB y las vuelve a crear en base a los modelos
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log('%s listening at', PORT); // eslint-disable-line no-console
   });
 });
