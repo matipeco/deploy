@@ -116,15 +116,6 @@ const Form = () => {
         })
     }
 
-    let [score, setScore] = useState(0);
-
-    const handleScore = () => {
-        setScore(
-            score + 1
-        )
-        console.log(score)
-    }
-
     //hace un dispatch para los types
     //cuando se monte el componente que traiga los types
     useEffect(() => {
@@ -137,8 +128,6 @@ const Form = () => {
 
             <form onSubmit={(ev) => handleSubmit(ev)} className={style.form}>
                 <h2>CREATE YOUR POKEMON!</h2>
-                <button onClick={handleScore}>Scores</button>
-                {score >= 1 && <p>{score}</p>}
                 <div>
                     <label htmlFor="name">Name</label>
                     <input type="text" id="name" required value={input.name} name="name" onChange={handleChange} onBlur={handleBlur} />
