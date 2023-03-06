@@ -2,7 +2,7 @@ import { Landing, Home, Detail, Form } from './views';
 import { Route, useLocation } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar';
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:3001/'
+axios.defaults.baseURL = 'https://deploy-production-67b7.up.railway.app/'
 
 function App() {
   //Hook que me permite ver por donde me muevo, y el pathname me muestra por donde estoy parado.
