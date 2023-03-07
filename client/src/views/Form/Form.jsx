@@ -172,7 +172,7 @@ const Form = () => {
                 </div>
                 <label >Type
                     <select name="types" onChange={handleSelect} disabled={input.types.length >= 2} onBlur={handleBlur}>
-                        <option value="all">All</option>
+                        <option value="all" disabled>All</option>
                         {
                             types.map((type) => (
                                 <option key={type.name} value={type.name}>{type.name}</option>
