@@ -28,7 +28,7 @@
     .background {
         background-image: url('./images/background-landing.jpg');
         background-position: center;
-        height: 90vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: flex-end;
