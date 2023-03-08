@@ -24,13 +24,13 @@ export const Detail = () => {
                 <img src={pokemon.image} alt="pokemon" />
                 <h2>{pokemon.name}</h2>
                 <div className={style.containerParrafos}>
-                    <p className={style.parrafos}><span>Life:</span>{pokemon.life}</p>
-                    <p className={style.parrafos}><span>Attack:</span>{pokemon.attack}</p>
-                    <p className={style.parrafos}><span>Defense:</span>{pokemon.defense}</p>
-                    <p className={style.parrafos}><span>Speed:</span>{pokemon.speed}</p>
-                    <p className={style.parrafos}><span> Height:</span>{pokemon.height}</p>
-                    <p className={style.parrafos}><span>Weight:</span>{pokemon.weight}</p>
-                    <p className={style.parrafos}><span>Type:</span>{pokemon.types.join(' - ')}</p>
+                    <p className={style.parrafos}><span>Life: </span>{pokemon.life}</p>
+                    <p className={style.parrafos}><span>Attack: </span>{pokemon.attack}</p>
+                    <p className={style.parrafos}><span>Defense: </span>{pokemon.defense}</p>
+                    <p className={style.parrafos}><span>Speed: </span>{pokemon.speed}</p>
+                    <p className={style.parrafos}><span> Height: </span>{pokemon.height}</p>
+                    <p className={style.parrafos}><span>Weight: </span>{pokemon.weight}</p>
+                    <p className={style.parrafos}><span>Type: </span>{pokemon.types.join(' - ')}</p>
                 </div>
             </article>
         </div>
